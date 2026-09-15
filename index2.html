@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SLTh7 - Персональний Сайт</title>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+  <!-- Напівпрозоре меню -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">SLTh7</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="hero">Огляд</a></li>
+        <li><a href="#biography">Біографія</a></li>
+        <li><a href="#gallery">Галерея фото</a></li>
+        <li><a href="#index3.html">Творчі едіти</a></li>
+        <li><a href="#details">Детальна інформація</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 1. Hero -->
+  <header class="hero" id="hero">
+    <h1>Ласкаво просимо, Діано!</h1>
+    <p>Сучасний дизайн із напівпрозорим меню та чисто CSS-галереєю нижче.</p>
+    <a href="#gallery" class="btn">Дивитися галерею</a>
+  </header>
+
+  <!-- 2. Біографія -->
+  <section class="content-section" id="biography">
+    <h2 class="section-title">Біографія</h2>
+    <div class="info-card">
+      <p>Вітаємо на сайті! Переглядайте фотогалерею нижче без додаткових скриптів.</p>
+    </div>
+  </section>
+
+  <!-- 3. CSS Фотогалерея (Без JavaScript) -->
+  <section class="content-section" id="gallery">
+    <h2 class="section-title">Галерея естетичних фотографій</h2>
+
+    <div class="css-slider">
+      <!-- Перемикачі (радіокнопки) -->
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+      <input type="radio" name="slider" id="slide4">
+
+      <!-- Кадри із зображеннями -->
+      <div class="slides">
+        <div class="slide s1">
+          <img src="https://cdn.discordapp.com/attachments/1549376815435485315/1549389776329904138/photo_2026-07-22_22-48-32.jpg?ex=6aaa852c&is=6aa933ac&hm=90c692f94d8048188003de2b75b84f91b4c90a962275b671baf3e285a73dd0b4&" alt="Фото 1">
+        </div>
+        <div class="slide s2">
+          <img src="photo2.jpg" alt="Фото 2">
+        </div>
+        <div class="slide s3">
+          <img src="photo3.jpg" alt="Фото 3">
+        </div>
+        <div class="slide s4">
+          <img src="photo4.jpg" alt="Фото 4">
+        </div>
+      </div>
+
+      <!-- Стрілочки для навігації -->
+      <div class="controls">
+        <!-- Стрілки для 1 фото -->
+        <div class="nav-group n1">
+          <label for="slide4" class="prev">&#10094;</label>
+          <label for="slide2" class="next">&#10095;</label>
+        </div>
+        <!-- Стрілки для 2 фото -->
+        <div class="nav-group n2">
+          <label for="slide1" class="prev">&#10094;</label>
+          <label for="slide3" class="next">&#10095;</label>
+        </div>
+        <!-- Стрілки для 3 фото -->
+        <div class="nav-group n3">
+          <label for="slide2" class="prev">&#10094;</label>
+          <label for="slide4" class="next">&#10095;</label>
+        </div>
+        <!-- Стрілки для 4 фото -->
+        <div class="nav-group n4">
+          <label for="slide3" class="prev">&#10094;</label>
+          <label for="slide1" class="next">&#10095;</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Деталі -->
+  <section class="content-section" id="details">
+    <h2 class="section-title">Детальна інформація</h2>
+    <div class="info-card">
+      <p>Додаткова інформація про проєкт.</p>
+    </div>
+  </section>
+
+  <!-- Залишаємо ваш оригінальний JS лише для плавної прокрутки меню -->
+  <script src="script.js"></script>
+</body>
+</html>
